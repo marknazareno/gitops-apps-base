@@ -14,7 +14,8 @@ spec:
   - host: spring-boot-demo.app.k8s.marknazareno.com
     http:
       paths:
-      - path: "/"
+      - pathType: Prefix
+        path: "/"
         backend:
           service:
             name: spring-boot-demo
