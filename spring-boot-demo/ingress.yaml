@@ -4,12 +4,12 @@ metadata:
   name: spring-boot-demo-ingress
   annotations:
     kubernetes.io/ingress.class: "nginx"
-    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+    cert-manager.io/cluster-issuer: "letsencrypt"
 spec:
   tls:
   - hosts:
     - spring-boot-demo.app.k8s.marknazareno.com
-    secretName: letsencrypt-secret-staging
+    secretName: letsencrypt-staging
   rules:
   - host: spring-boot-demo.app.k8s.marknazareno.com
     http:
