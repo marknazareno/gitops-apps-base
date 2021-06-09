@@ -9,7 +9,7 @@ spec:
   tls:
   - hosts:
     - spring-boot-demo.app.k8s.marknazareno.com
-    secretName: letsencrypt-staging
+    secretName: letsencrypt-secret
   rules:
   - host: spring-boot-demo.app.k8s.marknazareno.com
     http:
